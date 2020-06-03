@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+</head>
+<body>
+    <form>
+        <label for="from">Flying from</label>
+        <label for="to" style="margin-left: 100px;">To</label><br>
+        <select id="from" name="from">
+            <option value="BKK">Bangkok</option>
+            <option value="SNO">Sakonnakhon</option>
+          </select>
+        <select id="to" name="to" style="margin-left: 70px; margin-bottom: 20px;">
+            <option value="SNO">Sakonnakhon</option>
+            <option value="BKK">Bangkok</option>
+        </select><br>
+
+        <label for="depart">Departing</label>
+        <label for="return" style="margin-left: 115px;">Returning</label><br>
+        <input type="date" id="depart">
+        <input type="date" id="return" style="margin-left: 30px; margin-bottom: 20px;"><br>
+
+        <label for="adult">Adult</label>
+        <label for="child" style="margin-left: 30px;">Child</label>
+        <label for="infant" style="margin-left: 30px;">Infant</label>
+        <label for="currency" style="margin-left: 30px;">Currency</label><br>
+        <input type="number" id="adult" style="width: 40px;">
+        <input type="number" id="child" style="width: 40px; margin-left: 20px;">
+        <input type="number" id="infant" style="width: 40px; margin-left: 15px;">
+        <select id="currency" name="currency" style="margin-left: 20px;">
+            <option value="PKRt">PKR</option>
+            <option value="THB">THB</option>
+        </select><br>
+        <input type="submit" value="SEARCH" style="color: white; background-color: tomato; border: none; margin-top: 20px;">
+    </form>
+</body>
+</html>
