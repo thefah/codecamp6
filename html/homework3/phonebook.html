@@ -9,15 +9,20 @@
         border-collapse: collapse;
         }
         th , td {
-        max-width:100%;
-        height:auto;
         text-align: left;
         color: maroon;
         border: 1px dashed olive
         }
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="detail"] {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="detail">
     <table>
         <tr>
             <th>Name</th>
@@ -40,5 +45,6 @@
             <td>1642</td>
         </tr>
     </table>
+    </div>
 </body>
 </html>
